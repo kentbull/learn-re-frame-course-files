@@ -8,6 +8,10 @@ Learn re-frame a pattern for writing SPAs (Single-Page Applications) in ClojureS
 
 The code in this repo is split into two folders - `cheffy` - starting point of the videos (this is what you should open when you start to code along with the vidoes) and - `increments` - code for the start of each video (if you get lost somewhere along the way just copy the content of the video you are starting and continue).
 
+## My Updates
+
+- Updated dependencies to current as of 7/2/2023. See Jacek's [Jan 3 commit](https://github.com/jacekschae/learn-re-frame-course-files/commit/d5f640b8c4019983f6e3c6efa3b08c88f1ffe21d) for more dependency update details.
+
 ### Clone
 
 ```shell

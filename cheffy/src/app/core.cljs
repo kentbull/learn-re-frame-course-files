@@ -1,5 +1,6 @@
 (ns app.core
-  (:require [reagent.core :as r]))
+  (:require [reagent.core :as r]
+            [reagent.dom :as rd]))
 
 (defn app
   []
@@ -7,7 +8,7 @@
 
 (defn ^:dev/after-load start
   []
-  (r/render [app]
+  (rd/render [app]
     (.getElementById js/document "app")))
 
 (defn ^:export init

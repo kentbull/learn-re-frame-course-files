@@ -1,11 +1,11 @@
 {
-  "name": "Cheffy",
-  "version": "0.0.1",
+  "name": "cheffy-bull",
+  "version": "0.0.2",
   "description": "Cheffy - AirBnB for Chefs",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/jacekschae/learn-re-frame-course-files"
+    "url": "https://github.com/kentbull/learn-re-frame-course-files"
   },
   "scripts": {
     "dev": "shadow-cljs watch app",
@@ -15,8 +15,9 @@
     "clean-win": "rmdir /s /q public/js & rmdir /s /q target"
   },
   "dependencies": {
-    "@smooth-ui/core-sc": "9.0.2",
+    "@smooth-ui/core-sc": "10.1.0",
     "create-react-class": "15.7.0",
+    "highlight.js": "11.5.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^4.1.2",
