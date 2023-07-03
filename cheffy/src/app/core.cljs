@@ -7,6 +7,8 @@
    [app.auth.views.profile :refer [profile]]
    [app.auth.views.sign-up :refer [sign-up]]
    [app.auth.views.log-in :refer [log-in]]
+   [app.auth.events]
+   [app.auth.subs]
    ;; -- become-a-chef --
    [app.become-a-chef.views.become-a-chef :refer [become-a-chef]]
    ;; -- inbox -- 
@@ -46,11 +48,11 @@
          [pages active-nav]]]]]]))
 
 (defn ^:dev/after-load start
-  []
-  (rf/dispatch-sync [:initialize-db])
+  [] 
   (rd/render [app]
              (.getElementById js/document "app")))
 
 (defn ^:export init
   []
+  (rf/dispatch-sync [:initialize-db])
   (start))
